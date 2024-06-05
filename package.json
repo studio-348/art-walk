@@ -1,0 +1,14 @@
+{
+  "name": "art-walk",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0-alpha.10"
+  }
+}
