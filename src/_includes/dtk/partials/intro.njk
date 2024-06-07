@@ -1,0 +1,23 @@
+{% set intro %}
+{% include '../../../intro.md' %}
+{% endset %}
+
+{{ intro | renderUsingMarkdown | safe }}
+
+{% if person1.name %}
+<div>
+    <div>
+        <p>{{ person1.name }}</p>
+        <p>{{ person1.title }}</p>
+        <p>{{ person1.company }}</p>
+    </div>
+
+    {% if person2.name %}
+    <div>
+        <p>{{ person2.name }}</p>
+        <p>{{ person2.title }}</p>
+        <p>{{ person2.company }}</p>
+    </div>
+    {% endif %}
+</div>  
+{% endif %}
