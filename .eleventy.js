@@ -10,6 +10,15 @@ export default function(eleventyConfig) {
     return mdRender.render(rawString);
   });
 
+  eleventyConfig.addShortcode("artist", function(artist) {
+    let link = " ";
+    if (artist.instagram) {
+      const handle = artist.instagram.replace("@", "");
+      link += `<a href="https://www.instagram.com/${handle}" target="_blank">${artist.instagram}</a>`
+    }
+    return `<p>Artist: <span>${artist.name}${link}</span></p>`
+  });
+
   return {
     dir: {
       input: "src",

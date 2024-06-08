@@ -1,11 +1,15 @@
 ---
 layout: dtk/base.njk
+pageCss: index.css
 ---
-
-<div>
-    {{ content | safe }}
+<div class="index-container">
+    <div class="index-title">
+        {{ content | safe }}
+    </div>
+    <div class="index-logo">
+        <img src="{{ logo }}" />
+    </div>
+    <div class="index-intro">
+        {% include "dtk/partials/intro.njk" %}
+    </div>
 </div>
-<div>
-    {% include "dtk/partials/intro.njk" %}
-</div>
-

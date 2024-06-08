@@ -5,18 +5,18 @@
 {{ intro | renderUsingMarkdown | safe }}
 
 {% if person1.name %}
-<div>
+<div class="index-people">
     <div>
-        <p>{{ person1.name }}</p>
-        <p>{{ person1.title }}</p>
-        <p>{{ person1.company }}</p>
+        <p class="index-people-name">{{ person1.name }}</p>
+        <p class="index-people-text">{{ person1.title }}</p>
+        <p class="index-people-text">{{ person1.company }}</p>
     </div>
 
     {% if person2.name %}
     <div>
-        <p>{{ person2.name }}</p>
-        <p>{{ person2.title }}</p>
-        <p>{{ person2.company }}</p>
+        <p class="index-people-name">{{ person2.name }}</p>
+        <p class="index-people-text">{{ person2.title }}</p>
+        <p class="index-people-text">{{ person2.company }}</p>
     </div>
     {% endif %}
 </div>  

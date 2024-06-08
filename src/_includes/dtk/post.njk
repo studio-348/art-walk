@@ -1,5 +1,33 @@
----
-layout: dtk/base.njk
----
-
-<article>{{ content | safe}}</article>
+<!doctype html>
+<html lang="{{ metadata.language }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title or metadata.title }}</title>
+		<meta name="description" content="{{ description or metadata.description }}">
+        {% include "dtk/imports/font.njk" %}
+        <link rel="stylesheet" href="/assets/css/core.css" />
+        <link rel="stylesheet" href="/assets/css/post.css" />
+        <link rel="stylesheet" href="/assets/css/layouts/{{ layoutCss }}" />
+	</head>
+	<body>
+        <header>
+            <div>
+                <nav>
+                    <button class="post-button">{{ button }}</button>
+                </nav>
+            </div>
+            <div class="post-title">
+                <div class="post-title-text">
+                    <a href="/">{{ callout }}</a>
+                </div>
+                <div class="post-title-num">
+                    <p>#</p>
+                </div>
+            </div>
+        </header>
+		<main>
+			{{ content | safe}}
+		</main>
+	</body>
+</html>

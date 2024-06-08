@@ -1,0 +1,45 @@
+.index-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+
+.index-title {
+
+}
+
+.index-title h1{
+    color: white;
+}
+
+.index-title h2{
+    color: white;
+}
+
+.index-intro {
+    max-width: 800px;
+    padding: 60px;
+    background-color: white;
+}
+
+.index-people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.index-people-name {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.index-people-text {
+    margin: 0;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,11 @@
+---
+layout: dtk/post.njk
+layoutCss: "text-left_image-right.css"
+---
+<article>
+    {% include "dtk/partials/meta.njk" %}
+    {{ content | safe}}
+</article>
+<div>
+    <img src="{{ images.first }}"/>
+</div>

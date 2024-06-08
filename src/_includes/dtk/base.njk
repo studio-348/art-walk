@@ -5,25 +5,17 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title or metadata.title }}</title>
 		<meta name="description" content="{{ description or metadata.description }}">
-		{# {%- css %}{% include "public/css/index.css" %}{% endcss %} #}
+		{% include "dtk/imports/font.njk" %}
+		<link rel="stylesheet" href="/assets/css/core.css" />
+		<link rel="stylesheet" href="/assets/css/base.css" />
+		<link rel="stylesheet" href="/assets/css/{{ pageCss }}" />
 	</head>
 	<body>
-		<header>
-			<a href="/" class="home-link">{{ metadata.title }}</a>
-
-			{#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-			<nav>
-				<h2 class="visually-hidden">Top level navigation menu</h2>
-				<ul class="nav">
-				{# {%- for entry in collections.all | eleventyNavigation %}
-					<li class="nav-item"><a href="{{ entry.url }}"{% if entry.url == page.url %} aria-current="page"{% endif %}>{{ entry.title }}</a></li>
-				{%- endfor %} #}
-				</ul>
-			</nav>
+		<header class="base-header">
+			{% include "dtk/partials/nav.njk" %}
 		</header>
 
 		<main>
-      Test
 			{{ content | safe }}
 		</main>
 
