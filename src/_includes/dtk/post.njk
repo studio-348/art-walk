@@ -8,26 +8,27 @@
         {% include "dtk/imports/font.njk" %}
         <link rel="stylesheet" href="/assets/css/core.css" />
         <link rel="stylesheet" href="/assets/css/post.css" />
+        <link rel="stylesheet" href="/assets/css/partials/meta.css" />
         <link rel="stylesheet" href="/assets/css/layouts/{{ layoutCss }}" />
 	</head>
 	<body>
-        <header>
-            <div>
-                <nav>
-                    <button class="post-button">{{ button }}</button>
+        <div class="post-body">
+            <main class="post-main">
+                {{ content | safe}}
+            </main>
+            <div class="post-border-right">
+                <nav class="post-button">
+                    <a href="/"><img src="/assets/images/horizontal_rule.png">{{ button }}<img src="/assets/images/navigate_next.png"></a>
                 </nav>
             </div>
-            <div class="post-title">
-                <div class="post-title-text">
-                    <a href="/">{{ callout }}</a>
-                </div>
-                <div class="post-title-num">
-                    <p>#</p>
-                </div>
+        </div>
+        <footer class="post-border-bottom">
+            <div class="post-title-text">
+                <a href="/">{{ callout }}</a>
             </div>
-        </header>
-		<main>
-			{{ content | safe}}
-		</main>
+            <div class="post-title-num">
+                <p>#</p>
+            </div>
+        </footer>
 	</body>
 </html>

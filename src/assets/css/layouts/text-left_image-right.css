@@ -1,0 +1,42 @@
+.layout-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.layout-section {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.layout-grid {
+    transform: scaleX(-1) scaleY(-1);
+    border-left: 1px solid black;
+}
+
+.layout-content {
+    position: relative;
+    left: 80px;
+    top: 80px;
+    max-width: 500px;
+    min-height: 600px;
+}
+
+.layout-image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    max-width: 100%;
+    margin: 40px;
+}
+
+.layout-image img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-height: 80%;
+    object-fit: contain;   
+}

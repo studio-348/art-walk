@@ -9,7 +9,9 @@ medium: Digital illustration
 location:
   address: 151 Frederick Street
 images:
-  first: /assets/images/canoe-and-heron.webp
+  first: 
+    file: /posts/images/canoe-and-heron.webp
+    height: 1000px
 tags:
   - digital
 ---

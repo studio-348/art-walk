@@ -2,10 +2,17 @@
 layout: dtk/post.njk
 layoutCss: "text-left_image-right.css"
 ---
-<article>
-    {% include "dtk/partials/meta.njk" %}
-    {{ content | safe}}
-</article>
-<div>
-    <img src="{{ images.first }}"/>
+<div class="layout-container">
+    <article class="layout-section">
+        <div class="post-grid layout-grid"></div>
+        <div class="post-content layout-content">
+            <div>
+                {% include "dtk/partials/meta.njk" %}
+            </div>
+            {{ content | safe}}
+        </div>
+    </article>
+    <div class="layout-image layout-section">
+        <img style="max-height: '{{ images.first.height }}' " src ="{{ images.first.file }}"/>
+    </div>
 </div>

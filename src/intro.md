@@ -1,5 +1,5 @@
 **Welcome to the DTK Art Walk.**
 
-**Downtown Kitchener is the center and heart of the city. It is a place where people dare to take chances by....**
+**Downtown Kitchener is the centre and heart of the city. It is a place where people dare to take chances by opening businesses. Our community is a place where people gather for living, working and playing – a place where we host special events that embrace food, music and art for people of all ages and backgrounds to experience a great sense of belonging.**
 
-The Downtown Kitchener Art Walk was just that - a vision for the
+The Downtown Kitchener Art Walk was just that – a vision for enhancement through art installations and placemaking. The Downtown Kitchener BIA and the Kitchener-Waterloo Art Gallery worked together to create something special to be enjoyed by the community. This initiative serves to bring people together across the Region. We are especially grateful for the drive and passion of all the artists that participated in this exhibition – both past and present. Among past installations of art, you will also find new outdoor pieces of art and murals on buildings throughout the core that are renewed every two years. Whether you are driving, strolling, or riding, our goal is that everyone enjoys this outdoor exhibit. You can go fast or slow, sit and ponder or enjoy an offering at one of our downtown businesses. We hope you will feel a connection to this neighbourhood where all are welcome.

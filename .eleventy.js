@@ -4,6 +4,9 @@ import markdownit from 'markdown-it'
 export default function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy('./src/assets' );
   eleventyConfig.addWatchTarget('./src/assets');
+
+  eleventyConfig.addPassthroughCopy('./src/posts/images' );
+  eleventyConfig.addWatchTarget('./src/posts/images' );
   
   const mdRender = markdownit('default');
   eleventyConfig.addFilter("renderUsingMarkdown", function(rawString) {
@@ -16,7 +19,7 @@ export default function(eleventyConfig) {
       const handle = artist.instagram.replace("@", "");
       link += `<a href="https://www.instagram.com/${handle}" target="_blank">${artist.instagram}</a>`
     }
-    return `<p>Artist: <span>${artist.name}${link}</span></p>`
+    return `<p class="meta-text"><span class="meta-bold">Artist:</span> <span>${artist.name}${link}</span></p>`
   });
 
   return {
