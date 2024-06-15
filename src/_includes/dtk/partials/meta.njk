@@ -5,5 +5,6 @@
     {% artist artist %}
     <p class="meta-text"><span class="meta-bold">Year:</span> <span>{{created}}</span></p> 
     <p class="meta-text"><span class="meta-bold">Medium:</span> <span>{{medium}}</span></p>
-    <p class="meta-text"><span class="meta-bold">Location:</span> <span>{{location.address}}</span></p>
+    {% location location, city %}
+    {# <p class="meta-text"><span class="meta-bold">Location:</span> <span><a href="">{{location.address}}</a></span></p> #}
 </div>

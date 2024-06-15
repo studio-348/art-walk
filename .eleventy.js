@@ -22,6 +22,22 @@ export default function(eleventyConfig) {
     return `<p class="meta-text"><span class="meta-bold">Artist:</span> <span>${artist.name}${link}</span></p>`
   });
 
+  eleventyConfig.addShortcode('location', function(location, city){
+    let link = "";
+    let address = location.address
+    if(location.geo) {
+      // do something with geo
+    } else if (location.address) {
+      let place = "";
+      if(city) {
+        place = city.split(" ").join(",+");
+      }
+      place = location.address.split(" ").join("+") + ",+" +place;
+      link = `https://www.google.com/maps/place/${place}`;
+    }
+    return `<p class="meta-text"><span class="meta-bold">Location:</span> <span><a href="${link}" target="_blank">${address}</a></span></p>`
+  })
+
   return {
     dir: {
       input: "src",

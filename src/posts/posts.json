@@ -2,5 +2,6 @@
     "layout": "dtk/post.njk",
     "callout": "DTK Art Walk",
     "button": "Keep Exploring",
+    "city": "Kitchener Ontario", 
     "tags": "posts"
 }
