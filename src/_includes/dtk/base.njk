@@ -8,7 +8,11 @@
 		{% include "dtk/imports/font.njk" %}
 		<link rel="stylesheet" href="/assets/css/core.css" />
 		<link rel="stylesheet" href="/assets/css/base.css" />
-		<link rel="stylesheet" href="/assets/css/{{ pageCss }}" />
+		{% if css %}
+			{% for link in css %}
+				<link rel="stylesheet" href="/assets/css/{{link}}" />
+			{% endfor %}
+		{% endif %}
 	</head>
 	<body>
 		<header class="base-header">
@@ -20,5 +24,10 @@
 		</main>
 
 		<footer></footer>
+		{% if scripts %}
+			{% for link in scripts %}
+				<script src="/assets/scripts/{{link}}" ></script>
+			{% endfor %}
+		{% endif %}
 	</body>
 </html>

@@ -1,0 +1,13 @@
+<ul class="post-list">
+    {% for post in collections.posts %}
+      <li class="post-list-item">
+          <a href="{{ post.url }}">
+            <img class="post-list-image" src="{{ post.data.images.first.file}}"/>
+            <div class="post-list-content">
+                <p>{{ post.data.title }}</p>
+                <p>{{ post.data.artist.name }}</p>
+            </div>
+          </a>
+      </li>
+    {% endfor %}
+</ul>
