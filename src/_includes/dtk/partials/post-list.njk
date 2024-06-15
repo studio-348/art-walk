@@ -1,5 +1,5 @@
 <ul class="post-list">
-    {% for post in collections.posts %}
+    {% for post in collections[type] %}
       <li class="post-list-item">
           <a href="{{ post.url }}">
             <img class="post-list-image" src="{{ post.data.images.first.file}}"/>

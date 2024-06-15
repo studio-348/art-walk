@@ -1,8 +1,10 @@
 ---
 layout: dtk/base.njk
 css: ["collection.css", "partials/post-list.css"]
+type: 'posts'
 ---
 <h1>Collection</h1>
+{{ content | safe }}
 <div class="collection-list">
     {% include "dtk/partials/post-list.njk" %}
 </div>
