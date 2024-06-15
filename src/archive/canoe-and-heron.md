@@ -5,6 +5,7 @@ artist:
   name: August Swinson
   instagram: "@augustillustrated"
 created: 2021
+decommissioned: 2024
 medium: Digital illustration
 location:
   address: 151 Frederick Street
